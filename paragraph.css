@@ -1,0 +1,9 @@
+.paragraph{ /* CSS for small paragraph used in LogIn page */
+	border:1px solid white;
+	background-color: #242526;
+	border-width: 2px;
+	margin-top: 10px;
+	margin-left: 515px;
+	margin-right: 514px;
+	padding-left: 20px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignIn</title>
+	<meta charset="utf-8">
+	<meta name="Sign In to Onlinetech for more Information about Technology">
+	<meta name="keywords" content="Technology, Tech, online, OnlineTechs, Sign In">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="30">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="paragraph.css">
+</head>
+<style type="text/css">
+	h1{ /* for positioning and styling heading 1*/
+		text-align: center;
+		margin: 100px;
+		color: white;
+	}
+	body{ /* Changing Backround image and positioning it*/
+		background-image:url(Tech3.png);
+		background-size: cover;
+	}
+	.Hello{ /* For styling and positioning div of submit form*/
+		text-align: center;
+		color:black;
+		margin-top: 115px;
+		width: 30%
+		height:50%;
+	}
+	li:hover{ /*Hover color for nav bar*/
+		background-color: #616161;
+	}
+	.Mote{ /* CSS for Positioning Email form*/
+		margin: 9px;
+	}
+	.Dalle{ /* CSS for styling and positioning submit button*/
+		margin:20px;
+		background-color: #404040;
+		color: white;
+		width: 90px;
+		height: 25px;
+
+	}
+	.Dalle:hover{ /* hover color for submit button*/
+		background-color: grey;
+	}
+	p{ /* CSS for changing color of paragraph*/
+		color: white;
+	}
+	.Dhakal{ /* CSS for nav buttons to change background color and font family*/ 
+	    background-color: #3D3D3D;
+     	font-family: serif; 
+
+	}
+	h2{ /* CSS for styling and positioning heading 2*/
+		color: white;
+		text-align: center;
+	}
+	.UU{ /* CSS for styling and positioning Create Account button*/
+		width: 160px;
+		height: 30px;
+		margin-left: 681px;
+        font-size: 16px;
+        background-color:#404040;
+        border:0;
+        border-radius: 7px;
+
+	}
+	.UU:hover{ /* Hover color for Create Account button*/
+		background-color: grey;
+	}
+    .UU a{ /* CSS for styling Create Account button*/
+    	text-decoration: none;
+    	color: white;
+    }	
+	
+</style>
+<body>
+	<nav>
+		<ul>
+			<li class="Dhakal"><a href="Onlinetech.html">Home</a></li><!--navigation for Homepage-->
+			<li class="Dhakal"><a href="Blog.html">Blog</a></li><!--navigation for Blog page-->
+			<li class="Dhakal"><a href="Research.html">Research</a></li><!--navigation for Research page-->
+			<li class="Dhakal"><a href="SignIn.html">Log In</a></li><!--navigation for Log in page-->
+			<li class="Dhakal"><a href="Signup.html">Sign Up</a></li><!--navigation for Sign up page-->
+        </ul>	
+	</nav>
+    <div>
+    	<h1>LOG IN</h1>
+    </div>
+    <div class="Hello">
+    	<form name="foo" onsubmit="validation()"> <!-- for making submit form-->
+    	    <input type="Email" name="Email" class="Mote" placeholder="Email Address"><br>
+    	    <input type="text" name="Password" class="Chille" placeholder="Password"><br>
+    	    <input type="Submit" value="Log In" class="Dalle" name="Submit">
+    	    <script type="text/javascript"> /* Script for form Validation*/
+    	    	function validation(){
+    	    		var Email= document.forms["foo"]["Email"].value;
+    	    		var Password= document.forms["foo"]["Password"].value;
+    	    		if (Email==""|| Password=="") {
+    	    			alert("Login unsuccessful");
+    	    		}
+    	    		else{
+    	    			alert("Login successful");
+    	    		}
+    	    	}
+    	    </script> 
+        </form>
+    </div>
+    <div class="paragraph">
+    	<P>PLEASE INSERT YOUR EMAIL AND PASSWORD TO PROCEED</p>
+    </div>
+    <div>
+    	<h2>OR</h2>
+    	<button class="UU"><a href="Signup.html">Create Account</a></button>
+    </div>
+</body>
+</html>

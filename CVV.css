@@ -1,0 +1,14 @@
+/*This external CSS is for CV webpage*/
+.tdd{ /*CSS for styling and positioning the first column of the table*/
+	width: 200px;
+	background-color: #1c2833;
+	color: white;
+	padding:20px;
+	text-align: center;
+}
+.tde{ /*CSS for styling and positioning the second column of the table*/
+	width: 50%;
+    background-color: white;
+    margin-left: 100px;
+    font-family: arial;
+}

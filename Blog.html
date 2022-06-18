@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technology Blog</title>
+	<link rel="stylesheet" type="text/css" href="home.css"><!-- Linking the external Home CSS-->
+	<meta charset="utf-8">
+	<meta name="description" content="The definition of technology is science or knowledge put into practical use to solve problems or invent useful tools.">
+	<meta name="keywords" content="Technology, Tech, online,OnlineTechs, Blog, Technology Blog">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="20">
+	<style type="text/css">
+		body{ /* for changing color*/
+			background-color: #FFC0CB;
+			
+		}
+
+		.Dhakal:hover{ /* hover color for nav buttons */
+		background-color: #616161;
+	    }
+
+	    .Dhakal{ /* CSS for nav buttons to change background color and font family*/ 
+	    background-color: #3D3D3D;
+     	font-family: serif;
+        }
+
+
+        .blog{ /* CSS for Heading 1 and it's content*/
+        	position: absolute;
+        	top: 50%;
+        	left:50%;
+        	transform:translate(-50%,-50%);
+        	z-index: 5;
+        	width: 45%;
+            padding: 30px 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: #FFF9FF;
+            border-top-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+            background-color: #ACDF87;
+            margin-top: -60px;
+            font-weight: bold;
+            border:10px inset #fff;
+            font-family: cursive;
+        }
+        .lists{ /* CSS for paragraph after Heading 1 and it's content*/
+        	margin-top: 50px;
+        	text-align: center;
+        	font-family: cursive;
+        	font-weight:bold;
+        	color: #3D3D3D;
+        }
+        .lists2{ /* CSS for second paragraph and it's content*/
+            margin-top: 50px;
+        	text-align: center;
+        	font-family: cursive;
+        	font-weight:bold;
+        	color: #3D3D3D;	
+
+        }
+        ol{ /* For changing the direction of lists of content for paragraph 1 and paragraph 2*/
+        	margin-left: 38%;
+
+        }
+        img{ /*For Size and direction of Images used in javascript*/
+        	width: 500px;
+        	height: 300px;
+        	margin-top: 545px;
+        	margin-left: 34%;
+
+        }
+        .hide{
+        	display: none;
+        }
+        button{ /* For styling toogle button used in javascript*/
+        	margin-left: 47%;
+        	margin-top: 10px;
+        	background-color: #3D3D3D;
+        	color: white;
+        	width: 100px;
+		    height: 30px;
+            font-size: 16px;
+            border:0;
+            border-radius: 7px;
+        }
+        button:hover{ /* Hovor color for button*/
+        	background-color:#616161; 
+        } 
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="Dhakal"><a href="Onlinetech.html">Home</a></li><!--navigation for Homepage-->
+			<li class="Dhakal"><a href="Blog.html">Blog</a></li><!--navigation for Blog-->
+			<li class="Dhakal"><a href="Research.html">Research</a></li><!--navigation for Research-->
+			<li class="Dhakal"><a href="SignIn.html">Log In</a></li><!--navigation for Log In page-->
+			<li class="Dhakal"><a href="Signup.html">Sign Up</a></li><!--navigation for Sign Up page-->
+		</ul>
+	</nav>
+	<div class="blog"> <!-- For heading and it's content-->
+		<h1>Technology</h1>
+		<p class="para1">The definition of technology is science or knowledge put into practical use to solve problems or invent useful tools. ... An example of technology is the Internet which has made up-to-date information available to anyone with access in a matter of moments and provides real time information about events around the world.Technology affects the way individuals communicate, learn, and think. It helps society and determines how people interact with each other on a daily basis. Technology plays an important role in society today. It has positive and negative effects on the world and it impacts daily lives.</p>
+	</div>
+	<img src="blogimg.jpg" id="p1" class="hide">
+	<img src="blogimg2.jpg" id="p2" class="hide">
+	<button onclick="toogle()">Tap Here</button>
+	<script type="text/javascript">/*Script for changing pictures*/
+		function toogle(){
+			var image1=document.getElementById("p1");
+			var image2=document.getElementById("p2");
+			if(image1.style.display=="none"){
+				image1.style.display="block";
+				image2.style.display="none";
+			}
+
+			else{
+				image2.style.display="block";
+				image1.style.display="none";
+			}
+		}
+		var element=document.getElementById("p1");
+		element.style.display="block";
+	</script>
+	<div class="lists"> <!-- For Paragraph and it's content -->
+		<p>Some of the Advantages of <span style="font-size: large; color: blue;">Technology</span> in our Life:</p>
+		<ol>
+			<li>Ease of Access to Information.</li><br>
+            <li>Saves Time.</li><br>
+            <li>Ease of Mobility.</li><br>
+            <li>Better Communication Means.</li><br>
+            <li>Cost Efficiency.</li><br>
+            <li>Innovation In Many Fields.</li><br>
+            <li>Improved Banking.</li><br>
+            <li>Better Learning Techniques.</li><br>	
+		</ol>
+	</div>
+    <div class="lists2"> <!-- For 2nd paragraph and it's content-->
+    	<p>Some of the Disadvantages of <span style="font-size: large; color: blue;">Technology</span> in our Life:</p>
+    	<ol>
+    		<li>Privacy Issues Have Increased</li><br>
+    		<li>There is Lack of Human Relations</li><br>
+    		<li>Humans are Valued Less</li><br>
+    		<li>Intellectual Property Theft and Piracy makes it Difficult for Creatives to Make Money</li><br>
+    		<li>Technology Causes Environmental Problems</li><br>
+    		<li>Modern Societies are increasingly dependant on technology</li><br>
+    	</ol>
+    	
+    </div>
+</body>
+</html>
